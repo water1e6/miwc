@@ -1,0 +1,58 @@
+font-face { font-family: Archer; src: url('../font/Archer-Medium-Pro.otf'); }
+
+body{
+	background-color:#000000;
+	text-align: center;
+	font-size: 16px;
+}
+.form-text{
+	font-size: 38px;
+	color: #008000;
+	font-family: 'Archer';
+}
+.svg-image {
+	width: 100%;
+	overflow: hidden;
+}
+#mc-form {
+	position:absolute;
+	bottom: 50px;
+    width: 100%;
+	height: 200px;
+	z-index: 1;
+}
+#mc-subscribe {
+ background-color:#00457C;
+ width: 150px;
+ height: 54px;
+ margin: 0;
+ padding: 0;
+ border:2px solid #00457C;
+
+ /*button*/
+ -moz-border-radius: 10px;
+ -webkit-border-radius: 10px;
+ border-radius: 10px;
+
+ /*text*/
+ color:#f3f3f3;
+ font-size:1.5em;
+ font-weight: 100;
+}
+#mc-email{
+ width: 400px;
+ height: 48px;
+ border: 2px solid #00457C;
+ margin: 0;
+ padding: 0;
+
+ /* text box*/
+ -moz-border-radius: 10px;
+ -webkit-border-radius: 10px;
+ border-radius: 10px;
+
+  /*text*/
+ color:#000000;
+ font-size:1.5em;
+ font-weight: 100;
+}
