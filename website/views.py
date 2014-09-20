@@ -22,3 +22,12 @@ def splash(request):
 #    template = loader.get_template('website/splash.html')
 #    context = RequestContext(request, {'webpage': this_page})
 #    return HttpResponse(template.render(context))
+def custom404(request):
+    page = 'dummy'
+    context = {'webpage': page}
+    return render(request, '404.html', context)
+
+def custom500(request):
+    page = 'dummy'
+    context = {'webpage': page}
+    return render(request, '500.html', context)
