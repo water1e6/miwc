@@ -5,7 +5,7 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    # Examples:
+    # Examples: 
     # url(r'^miwc/', include('miwc.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
