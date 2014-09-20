@@ -17,6 +17,3 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', include('website.urls', namespace='site')),
 )
-
-handler404 = 'website.views.custom404'
-handler500 = 'website.views.custom500'
