@@ -1,64 +1,180 @@
 font-face { font-family: Archer; src: url('../font/Archer-Medium-Pro.otf'); }
 
 body{
-	background-color:#000000;
+	background-color:#FFFFFF;
 	text-align: center;
 	font-size: 16px;
-}
-
-.form-text{
-	font-size: 38px;
-	color: #FFFFFF;
 	font-family: 'Archer';
+	height:100%;
+	width:100%;
+	max-width:100%;
+	background: #3B3B3B;
 }
-
-.logo {
-	z-index: 0;
+html{
+	height:100%;
+	width:100%;
+	max-width:100%;
+}
+h1{
+	font-family:'Archer';
+	font-size: 4.0em;
+	color:#FFFFFF;
+}
+h2{
+	font-family:'Archer';
+	font-size: 3.0em;
+	font-weight: 100;
+	color:#666666;
+}
+.upper{
+	height: 100%;
 	width: 100%;
-	overflow: hidden;
 }
+.announce{
+	position: relative;
+	height:100%;
+	width:100%;
+}
+.section{
+	position: relative;
+	background:#FFFFFF;
+	text-align:center;	
+}
+.section-text{
+	position: relative;
+	padding-bottom: 100px;
+	padding-top: 100px;
+	padding-left: 100px;
+	padding-right: 100px;
+	font-family:'Archer';
+	font-size: 3.0em;
+	font-weight: 120;
+	color:#666666;
+}
+.middle{
+	height: 100%;
+	width: 100%;
+	background: url('../images/naomi_playing.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+	filter: alpha(Opacity=65);
+	opacity: 0.65;
 
-#mc-form {
+}
+.signup-form{
+	text-align: center;
+}
+.nav-top{
+	position:relative;
+	height: 8%;
+	width: 100%;
+}
+.logo-top {
 	position:absolute;
-	bottom: 50px;
-    width: 100%;
+	height: 100%;
+	width: 100%;
+}
+.logo-bottom {
+	position:absolute;
+	left: 60px;
+	height: 100%;
+	width: 100%;
+	margin-top:15px;
+}
+.footer-container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: url('../images/rain_pond.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+.footer-bottom {
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+	text-align: left;
 	height: 200px;
-	z-index: 1;
+	background-color: #3B3B3B;
+	background:rgba(59,59,59,0.95);
+	color: #FFFFFF;
+	font-size:1.5em;
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
 }
-
+.footer-right {
+	position: relative;
+	width: 100%;
+	padding-bottom: 15px;
+	padding-top: 25px;
+	margin-top: 50px;
+	text-align: left;
+	background-color: #3B3B3B;
+	background:rgba(59,59,59,0.90);
+	color: #FFFFFF;
+	font-size:1.4em;
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.footer-left-text{
+	position: absolute;
+	left: 65px;
+	bottom: 15px;
+	font-size:0.7em;
+	width: 33%;
+ 	font-weight: 120;
+ 	line-height: 100%;
+ 	color: #CCCCCC;
+}
+.footer-right-text{
+	font-size:1.6em;
+ 	font-weight: 250;
+ 	line-height: 100%;
+ 	color: #CCCCCC;
+}
 #mc-subscribe {
- background-color:#00457C;
- width: 150px;
- height: 54px;
- margin: 0;
- padding: 0;
- border:2px solid #00457C;
-
- /*button*/
- -moz-border-radius: 10px;
- -webkit-border-radius: 10px;
- border-radius: 10px;
-
- /*text*/
- color:#f3f3f3;
- font-size:1.5em;
- font-weight: 100;
+	background-color:#F3F3F3;
+	width: 100px;
+	height: 35px;
+	font-size:0.8em;
+	font-weight: 100;
+	color: #3B3B3B;
+	font-family: 'Arial';
+	margin-left: 5px;
+}
+#mc-email{
+	width: 400px;
+	height: 40px;
+	border: 2px solid #F3F3F3;
+	background-color: #3B3B3B;
+	margin-top: 30px; 
+	margin-bottom: 10px;
+	padding-left:5px; 
+font-size:1.1em;
+font-weight: 100;
+color: #CCCCCC;
+font-family: 'Archer';
+}
+a:link {
+    text-decoration: none;
+    color: inherit;
 }
 
-#mc-email{
- width: 400px;
- height: 48px;
- border: 2px solid #00457C;
- margin: 0;
- padding: 0;
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
 
- /* text box*/
- -moz-border-radius: 10px;
- -webkit-border-radius: 10px;
- border-radius: 10px;
+a:hover {
+    text-decoration: underline;
+	color: inherit;
+}
 
-  /*text*/
- color:#000000;
- font-size:1.5em;
- font-weight: 100;
+a:active {
+    text-decoration: underline;
+    color: inherit;
 }
