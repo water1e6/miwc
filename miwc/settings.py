@@ -38,16 +38,16 @@ else:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'miwcdb0',
-            'USER': 'miwc',
-            'PASSWORD': 'abcd1234',
-            'HOST': '/opt/local/var/run/mysql56/mysqld.sock',
+            'NAME': 'django_miwc',
+            'USER': 'water1e6',
+            'PASSWORD': 'sJ#bz$@AiX!PH0qH',
+            'HOST': '/var/run/mysqld/mysqld.sock',
         }
     }
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = ['localhost', '127.0.0.1','miwc-web.appspot.com', 'www.mercerislandwater.com',]
+ALLOWED_HOSTS = ['localhost', '127.0.0.1','miwc-web.appspot.com', 'www.mercerislandwater.com','146.148.69.72']
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -85,7 +85,7 @@ MEDIA_URL = ''
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/var/www/example.com/static/"
-STATIC_ROOT = 'static'
+STATIC_ROOT = '/var/www/website/static/'
 
 # URL prefix for static files.
 # Example: "http://example.com/static/", "http://static.example.com/"
@@ -135,7 +135,7 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    '/Users/shane/projects/miwc/templates'
+    '/Users/shane/projects/miwc/templates',
 )
 
 INSTALLED_APPS = (
