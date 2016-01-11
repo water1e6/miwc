@@ -1,0 +1,36 @@
+.section-container {
+	width: 100%;
+	left: 0%;
+}
+.nav-logo {
+	width: 150px; /* w = 2.65x h */
+	height: 57px;
+}
+.nav-link {
+	font-size: 16px;
+	padding: 0 2.0em 20px 10px;
+}
+.image-headline {
+	font-size: 40px;
+	top:35px;
+	left: 5%;
+}
+.section-headline {
+	font-size: 26px;
+	padding: 75px 0 0 0;
+	text-align: left;
+}
+.photo-box{
+	padding: 35px 0 0 0;
+	width: 100%;
+}
+.copy-box{
+	padding: 35px 5% 0px 5%;
+}
+.photo-caption{
+	font-size: 14px;
+	padding-right: 5px;
+}
+.copy{
+	font-size: 18px;
+ }

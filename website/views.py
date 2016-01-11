@@ -1,11 +1,27 @@
 from django.shortcuts import render
 from django.http import Http404
-#from django.http import HttpResponse
+from django.http import HttpResponse
 #from django.template import RequestContext, loader
 
 from website.models import WebPage
+ 
+ 
+def newhomepage(request, thisurl):
+     
+    page = WebPage.objects.filter(Url ='zz')[0]
+    z = page.ContentSections.all()
+    try:
+        assert(page)
+    except:
+        raise Http404
+ 
+    context = {'page': page, 'name':'shane', 'z':z}
+ 
+    return render(request, 'website/page_homepage.html', context)
 
-def splash(request):
+
+
+def oldhomepage(request):
 
 #    page_set = WebPage.objects.filter(PageCategory__CategoryName='splash')
 #

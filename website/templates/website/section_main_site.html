@@ -1,0 +1,267 @@
+{% extends "website/base.html" %}
+{% load staticfiles %}
+
+{# head #}
+
+{% block page_title %}
+
+<title>{{ page.Title }}</title>
+
+{% endblock page_title %}
+
+{# body #}
+
+{% block nav %}
+<nav class="nav">
+
+	<div class="grid-container">
+
+		<div class="nav-logo">
+			<object height="100%" itemprop="logo" type="image/svg+xml" data="{% static 'website/images/miwc_logo.svg' %}" />
+			</object>
+		</div>
+
+		<div class="nav-items">
+			<a class="nav-link" href="/company/"> 
+				Company
+			</a>
+			<a class="nav-link" href="/research/">
+				Research
+			</a>
+			<a class="nav-link" href="/ef01/">
+				EF01
+			</a>
+		</div> 
+		<!-- nav-items --> 
+	</div> 
+	<!-- grid-container -->
+</nav>
+{% endblock nav %}
+
+<div role="main">
+	{% block top_section %}
+	<div class="image-container">
+		
+		<div class="top-section">
+			<img src="{% static 'website/images/yoga_girl_1500.jpeg' %}" sizes="100vw"
+			srcset="{% static 'website/images/yoga_girl_750.jpeg' %} 750w, {% static 'website/images/yoga_girl_1500.jpeg' %} 1500w,
+			{% static 'website/images/yoga_girl_2000.jpeg' %} 2000w, {% static 'website/images/yoga_girl_4000.jpeg' %} 4000w">
+		</div>
+		<!-- top-section -->
+			<div class="image-headline">
+				Intelligent
+				<br>
+				Water
+				Quality
+			</div>
+			<!-- section-headline -->
+	</div>
+	<!-- image-container -->
+	{% endblock top_section %}
+	{% block content_middle %}
+
+	<div class="section-container">
+
+		<div class="copy-box copy-box-left box-100">
+			<div class="section-headline">
+				Nothing is more important than your health
+			</div>
+			<!-- section-headline -->
+		</div>
+		<!-- copy-box-left-65 -->
+
+		<div class="copy-box copy-box-left box-35">
+			<div class="copy">
+				<p>Our health is deeply connected to the water that we consume.</p>
+				<p>Even in the US, several concerning water quality trends are affecting human health.  Visit <a class="link" href="/research/"> research </a> to learn more.</p>
+				<p>When it comes to water quality and our health, we should strive for excellence.</p>
+			</div>
+			<!-- copy -->
+		</div>
+		<!-- copy-box-left-35 -->
+
+		<div class="photo-box photo-box-right box-55">
+				<img src="{% static 'website/images/yoga_man_1500.jpeg' %}" sizes="100vw"
+				srcset="{% static 'website/images/yoga_man_750.jpeg' %} 750w, {% static 'website/images/yoga_man_1500.jpeg' %} 1500w,
+				{% static 'website/images/yoga_man_2000.jpeg' %} 2000w, {% static 'website/images/yoga_man_4000.jpeg' %} 4000w">
+		</div>
+		<!-- photo-box-right-55 -->
+	</div>
+	<!-- section-container-left -->
+
+
+	<div class="section-container section-container-center">
+
+		<div class="copy-box copy-box-center box-95">
+			<div class="section-headline">
+				Intelligent Water Quality&#0153; 
+			</div>
+			<!-- section-headline -->
+		</div>
+		<!-- copy-box-center-95 -->
+
+
+		<div class="photo-box photo-box-center box-65">
+				<img src="{% static 'website/images/lightbulb_1500.jpeg' %}" sizes="25vw"
+				srcset="{% static 'website/images/lightbulb_750.jpeg' %} 750w, {% static 'website/images/lightbulb_1500.jpeg' %} 1500w,
+				{% static 'website/images/lightbulb_2000.jpeg' %} 2000w, {% static 'website/images/lightbulb_4000.jpeg' %} 4000w">
+		</div>
+		<!-- photo-box-center-65 -->
+
+
+
+		<div class="copy-box copy-box-center box-35">
+			<div class="copy">
+				<p>For all the importance of water quality, we often know very little about it.</p>
+				<p>Indeed, we have more information about our favorite sports teams or television lineup than we have about the water we consume.</p>
+			</div>
+			<!-- copy -->
+		</div>
+		<!-- copy-box-center-35 -->
+
+	</div>
+	<!-- section-container-center -->
+
+
+	<div class="section-container">
+
+		<div class="copy-box copy-box-left box-95">
+			<div class="section-headline">
+				EF-01: The First SmartFilter
+			</div>
+			<!-- section-headline -->
+		</div>
+		<!-- copy-box -->
+		
+		<div class="photo-box photo-box-left box-55">
+				<img src="{% static 'website/images/mdriver_v03_pcb_1500.jpeg' %}" sizes="100vw"
+				srcset="{% static 'website/images/mdriver_v03_pcb_750.jpeg' %} 750w, {% static 'website/images/mdriver_v03_pcb_1500.jpeg' %} 1500w,
+				{% static 'website/images/mdriver_v03_pcb_2000.jpeg' %} 2000w, {% static 'website/images/mdriver_v03_pcb_4000.jpeg' %} 4000w">
+
+			<div class="photo-caption">
+				EF-01 motor control electronics
+			</div>
+		</div>
+		<!-- photo-box-left-50 -->
+
+		<div class="copy-box copy-box-right box-35">
+			<div class="copy">
+				<p>The old saying goes: what can be measured can be improved.</p>
+				<p>We had exactly this in mind when creating EF-01, the world's first smart water filter for families.</p>
+				<p>Microprocessor based electronics enable precision control of filter processes and provide real time quality data.</p>
+				<p>EF-01 is both a powerful treatment device and information platform.</p>
+				<p>For those who seek the highest standard of water quality, EF-01 illuminates the darkness that has been an obstruction until now.</p>
+				<p>Visit <a class="link" href="/ef01/"> EF-01 </a> to learn more.</p>
+				
+			</div>
+			<!-- copy --> 
+		</div>
+		<!-- copy-box-right-35 -->
+
+	</div>
+	<!-- section-container-left -->
+
+
+	<div class="section-container">
+		<div class="copy-box copy-box-left box-95">
+			<div class="section-headline">
+				Love Water &nbsp;+&nbsp; Respect Nature 
+			</div>
+			<!-- section-headline -->
+		</div>
+		<!-- copy-box -->
+
+		<div class="copy-box copy-box-left box-35">
+			<div class="copy">
+				<p>We live in an age of technology and scientific achievement that mankind has dreamed about for millenia.</p>
+				<p>Too much of this advancement has been adverserial to nature and destructive to our planet.</p>
+			</div>
+			<!-- copy -->
+		</div>
+		<!-- copy-box -->
+			
+		<div class="photo-box photo-box-right box-55">
+				<img src="{% static 'website/images/pollution_salford_1500.jpeg' %}" sizes="100vw"
+				srcset="{% static 'website/images/pollution_salford_750.jpeg' %} 750w, {% static 'website/images/pollution_salford_1500.jpeg' %} 1500w,
+				{% static 'website/images/pollution_salford_2000.jpeg' %} 2000w, {% static 'website/images/pollution_salford_4000.jpeg' %} 4000w">
+
+			<div class="photo-caption">
+				Manchester Ship Canal, Salford, England
+			</div>
+			<!-- caption -->
+
+		</div>
+		<!-- photo-box -->
+
+
+	</div>
+	<!-- section-container-left -->
+
+	<div class="section-container section-container-center">
+
+		<div class="copy-box copy-box-center box-95">
+			<div class="section-headline">
+				A New Era
+			</div>
+			<!-- section-headline -->
+		</div>
+		<!-- copy-box-center-65 -->
+		
+
+
+		<div class="copy-box copy-box-center box-85">
+			<div class="copy">
+				<p>In the present day, massive changes are unfolding at rapid speed.</p>
+				<p>We have more and more information at our fingertips -- this makes possible a new age of enlightenment based on openness, transparency, and the triumph of reason.</p> 
+				<p>The next technological era must unfold in harmony with nature. Also, we must move beyond science and technology.</p>
+				<p>Science and technology are incredibly powerful and exciting tools, but we should not be limited by them. The potential of human conciousness is far greater.</p>
+			</div>
+			<!-- copy -->
+		</div>
+		<!-- copy-box-center-65 -->
+
+		<div class="photo-box photo-box-center box-100">
+				<img src="{% static 'website/images/earth_horizon_1500.jpeg' %}" sizes="100vw"
+				srcset="{% static 'website/images/earth_horizon_750.jpeg' %} 750w, {% static 'website/images/earth_horizon_1500.jpeg' %} 1500w,
+				{% static 'website/images/earth_horizon_2000.jpeg' %} 2000w, {% static 'website/images/earth_horizon_4000.jpeg' %} 4000w">
+		</div>
+		<!-- photo-box-center-65 -->
+
+
+		<div class="copy-box copy-box-center box-85">
+			<div class="copy">
+				<p>We are entering an age where almost anything is possible. Here at Mercer Island Water Co, we are excited and grateful for this opportunity to improve water quality.</p>
+				<p>Visit <a class="link" href="/company/"> company </a> to learn more about our company and philosophy.</p>
+			</div>
+			<!-- copy -->
+			
+		</div>
+		<!-- copy-box-center-65 -->
+	</div>
+	<!-- section-container-center -->
+	{% endblock content_middle %}
+
+</div>
+<!-- main -->
+
+{% block content_footer %}
+<div class="footer">
+	<div class="grid-container">
+		<div class="footer-logo-container">
+			<div class="footer-logo">
+				<a href="/">
+				<img max src="{% static 'website/images/miwc_logo_small.png' %}">
+				</a>
+			</div>
+		</div>
+	
+		<div class="mission">
+			Our mission is to measure and improve the quality of the world’s water.
+		</div>
+	
+		<div class="copyright">
+			&copy;2016 Mercer Island Water Co. All rights reserved.
+		</div>
+	</div>
+</div>
+{% endblock content_footer %}
