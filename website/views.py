@@ -6,16 +6,9 @@ from django.http import HttpResponse
 from website.models import WebPage
  
  
-def newhomepage(request, thisurl):
-     
-    page = WebPage.objects.filter(Url ='zz')[0]
-    z = page.ContentSections.all()
-    try:
-        assert(page)
-    except:
-        raise Http404
- 
-    context = {'page': page, 'name':'shane', 'z':z}
+def newhomepage(request):
+
+    context = {'page': 'dummy', 'name':'dummy', 'z':'dummy'}
  
     return render(request, 'website/page_homepage.html', context)
 
